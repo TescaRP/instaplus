@@ -20,14 +20,13 @@
                   <span>Lembrar login</span>
                 </label>
 
-                </label>
               </div>
             </form>
           </div>
           <div class="card-action right-align">
-            <a class="waves-effect waves-light btn">signup</a>
-            &nbsp
-            <a class="waves-effect waves-light btn">signin</a>
+            <router-link to='/register' class="waves-effect waves-light btn">Registrar</router-link>
+            
+            <a class="waves-effect waves-light btn">Logar</a>
           </div>
         </div>
       </div>

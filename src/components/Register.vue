@@ -28,14 +28,12 @@
                                     <span>Aceito os <a href="#">termos</a></span>
                                 </label>
 
-                                </label>
                             </div>
                         </form>
                     </div>
                     <div class="card-action right-align">
-                        <a href="#" class='waves-effect waves-light btn'>signup</a>
-                        &nbsp
-                        <a href="#" class='waves-effect waves-light btn'>signin</a>
+                        <a class="waves-effect waves-light btn">Registrar</a>
+                        <router-link to='/login' class="waves-effect waves-light btn">Logar</router-link>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,7 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
     if (to.path == '/')
-        console.log('/');
+        //todo verificar se possui token (está logado) se não, manda para /login
 
     next();
 })
