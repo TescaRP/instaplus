@@ -33,7 +33,7 @@
                     </div>
                     <div class="card-action right-align">
                         <a class="waves-effect waves-light btn">Registrar</a>
-                        <router-link to='/login' class="waves-effect waves-light btn">Logar</router-link>
+                        <router-link :to='{name:"login"}' class="waves-effect waves-light btn">Logar</router-link>
                     </div>
                 </div>
             </div>

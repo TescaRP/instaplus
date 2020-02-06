@@ -24,7 +24,7 @@
             </form>
           </div>
           <div class="card-action right-align">
-            <router-link to='/register' class="waves-effect waves-light btn">Registrar</router-link>
+            <router-link :to='{name:"register"}' class="waves-effect waves-light btn">Registrar</router-link>
             
             <a class="waves-effect waves-light btn">Logar</a>
           </div>
@@ -35,7 +35,9 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+
+  };
 </script>
 
 <style scoped>

@@ -8,26 +8,29 @@ Vue.use(Router);
 
 const router = new Router({
     routes: [{
-        path: "/",
-        component: Inicio
+        path: "",
+        component: Inicio,
+        name:"Inicio"
     },
     {
         path: "/login",
-        component: Login
+        component: Login,
+        name:"login"
     },
     {
         path: "/register",
-        component: Register
+        component: Register,
+        name:"register"
     },
     {
         path: "*",
-        component: Login
+        component: Login,
     }],
     mode: 'history'
 })
 
 router.beforeEach((to, from, next) => {
-    if (to.path == '/')
+    // if (to.path == '/')
         //todo verificar se possui token (está logado) se não, manda para /login
 
     next();

@@ -2,9 +2,6 @@
   <div id="app">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <router-view />
-    <div class="pink darken-4">
-      
-    </div>
   </div>
 </template>
 
@@ -22,6 +19,11 @@ export default {
   font-family: 'Comfortaa', Helvetica, sans-serif;
 }
 html{
+  height: 100%;
+}
+
+div#app{
+  width: 100%;
   height: 100%;
 }
 </style>
