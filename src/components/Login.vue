@@ -1,88 +1,37 @@
 <template>
-  <div class="container ">
-    <div class='row'>
-      <div class="s ">
-        <div class="card z-depth-3 ">
-          <div class="card-content white-text">
-            <span class="card-title">Insta+</span>
-            <form action="#" method="post">
-              <div class='input-field'>
-                <label for="nome">Usuário</label>
-                <input type="text" name="nome" id="nome" />
-              </div>
-              <div class='input-field'>
-                <label for="nome">Senha</label>
-                <input type="text" name="nome" id="nome" />
-              </div>
-              <div class='input-field'>
-                <label>
-                  <input type="checkbox" name="" id="">
-                  <span>Lembrar login</span>
-                </label>
-
-              </div>
-            </form>
-          </div>
-          <div class="card-action right-align">
-            <router-link :to='{name:"register"}' class="waves-effect waves-light btn">Registrar</router-link>
-            
-            <a class="waves-effect waves-light btn">Logar</a>
-          </div>
-        </div>
+  <div class="container d-flex">
+    <h3 class="center-align">Login</h3>
+    <span>
+      <div class="input-field">
+        <input id="user" type="text" class="validate" />
+        <label for="user">Digite seu usuário</label>
       </div>
-    </div>
+      <div class="input-field">
+        <input id="password" type="password" class="validate" />
+        <label for="password">Password</label>
+        <router-link to='forget' class="helper-text teal-text text-lighten-2">Esqueceu a senha?</router-link>
+      </div>
+
+    </span>
+    <button type="submit" class='btn waves-effect waves-light align-center'>Entrar</button>
   </div>
 </template>
 
 <script>
-  export default {
-
-  };
+export default {};
 </script>
 
-<style scoped>
-  
-.card{
-  margin-top: 25%;
+<style >
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    min-height: 80vh;
 }
-  .card-action {
-    height: 100%;
-    border-radius: 1rem !important;
-  }
-
-  .card-title {
-    text-transform: uppercase;
-    font-weight: bolder !important;
-
-  }
-
-  .card-content {
-    height: 270px;
-  }
-
-  label {
-    color: rgb(185, 185, 185) !important;
-  }
-
-  input {
-    color: white;
-  }
-
-  a:last-child{
-    background-color: #00695c  !important;
-  }
-  a:first-child{
-    background-color: white;
-    color: black;
-  }
-
-  a{
-    font-weight: bolder;
-  }
-
-
-
- 
-
+.btn{
+    display:block !important;
+    margin: 0 !important;
+    width: 100%;
+}
 
 </style>

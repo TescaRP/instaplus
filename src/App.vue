@@ -1,29 +1,36 @@
 <template>
   <div id="app">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-    <router-view />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <div class="box" style='min-height: 100vh;'>
+      <Header />
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
+import Header from "./components/Header";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
+    Header
   }
-}
+};
 </script>
 
 <style>
-*{
-  font-family: 'Comfortaa', Helvetica, sans-serif;
+* {
+  font-family: "Comfortaa", Helvetica, sans-serif;
 }
-html{
+html,
+body {
   height: 100%;
 }
-
-div#app{
+.box{
   width: 100%;
   height: 100%;
+  background-color: #E4FCFE;
 }
 </style>
