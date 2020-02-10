@@ -2,10 +2,10 @@
   <div id="app">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <div class="box row" style='min-height: 80vh;'>
-      <div class="col s12 m6 offset-m3">
+    <div class="box row" style="min-height: 80vh;">
+      <div class="col corpo s12 m8 offset-m2">
         <Header />
-      <router-view />
+        <router-view />
       </div>
     </div>
   </div>
@@ -23,15 +23,23 @@ export default {
 </script>
 
 <style>
+.row{
+  max-width: 900px !important;
+  min-width: 250px !important;
+}
+.corpo {
+  padding: 0 !important;
+}
+
 * {
   font-family: "Comfortaa", Helvetica, sans-serif;
 }
 html,
 body {
   height: 100%;
-  background-color: #E4FCFE;
+  background-color: #e4fcfe;
 }
-.box{
+.box {
   width: 100%;
   height: 100%;
 }

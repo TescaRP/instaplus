@@ -10,6 +10,7 @@
         <input id="password" type="password" class="validate" />
         <label for="password">Password</label>
         <router-link to='forget' class="helper-text teal-text text-lighten-2">Esqueceu a senha?</router-link>
+        <router-link to='register' class="helper-text teal-text text-lighten-2">Não tem conta? Registre-se!</router-link>
       </div>
 
     </span>
