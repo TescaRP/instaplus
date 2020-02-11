@@ -26,7 +26,7 @@ export default {};
     display:flex;
     flex-direction: column;
     justify-content: space-between !important;
-    min-height: 80vh;
+    height: 100%;
 }
 .btn{
     display:block !important;
