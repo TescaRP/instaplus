@@ -1,7 +1,8 @@
 <template>
   <div class="container d-flex">
     <h3 class="center-align">Login</h3>
-    <span>
+
+    <form action="bb" @submit.prevent="onSubmit">
       <div class="input-field">
         <input id="user" type="text" class="validate" />
         <label for="user">Digite seu usuário</label>
@@ -13,13 +14,20 @@
         <router-link to='register' class="helper-text teal-text text-lighten-2">Não tem conta? Registre-se!</router-link>
       </div>
 
-    </span>
     <button type="submit" class='btn waves-effect waves-light align-center'>Entrar</button>
+    </form>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods:{
+    onSubmit() {
+      //if ok
+      this.$router.push({name: "Inicio"})
+    }
+  }
+};
 </script>
 
 <style scoped>
