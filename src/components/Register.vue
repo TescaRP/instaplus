@@ -7,8 +7,8 @@
         <label for="user">Digite seu usuário</label>
       </div>
       <div class="input-field">
-        <input id="user" type="email" class="validate" />
-        <label for="user">Digite seu email</label>
+        <input id="email" type="email" class="validate" />
+        <label for="email">Digite seu email</label>
       </div>
       <div class="input-field">
         <input id="password" type="password" class="validate" />

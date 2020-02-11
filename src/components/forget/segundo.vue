@@ -1,6 +1,11 @@
 <template>
-  <div>
-      2
+  <div class="container d-flex">
+    <h3 class="center-align">Insira o código</h3>
+    <span>
+      <div class="input-field">
+        <input id="code" type="text" placeholder='XXXXX' maxlength='5' class="validate" />
+      </div>
+    </span>
   </div>
 </template>
 
@@ -10,6 +15,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+input{
+  width: 20% !important;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 </style>

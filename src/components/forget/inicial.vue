@@ -3,13 +3,10 @@
     <h3 class="center-align">Recuperar senha</h3>
     <span>
       <div class="input-field">
-        <input id="user" type="email" class="validate" />
-        <label for="user">Digite seu email</label>
+        <input id="email" type="email" class="validate" />
+        <label for="email">Digite seu email</label>
       </div>
-     
-
     </span>
-    
   </div>
 </template>
 

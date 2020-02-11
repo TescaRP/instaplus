@@ -16,8 +16,16 @@ import Header from "./components/Header";
 
 export default {
   name: "app",
+  data(){
+    return{
+
+    }
+  },
   components: {
     Header
+  },
+  created(){
+    let token = localStorage.nome;
   }
 };
 </script>
