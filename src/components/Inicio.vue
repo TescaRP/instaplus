@@ -6,6 +6,7 @@
     </div>
     <section>
       <Post />
+      <Post />
     </section>
   </div>
 </template>
@@ -25,11 +26,13 @@ section {
 }
 
 input#search {
-  font-size: 16px !important;
+  font-size: 0.9rem !important;
   height: 20% !important;
   color: white;
   border-bottom: none !important;
   box-shadow: none !important;
+  vertical-align: bottom !important;
+  margin: 0;
 }
 
 input#search:focus {
